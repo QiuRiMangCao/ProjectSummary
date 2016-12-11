@@ -1,0 +1,41 @@
+
+之前我们在写项目的时候经常看到一下代码:
+ <div id="header"></div>
+
+而但我们有了html5的时候,我们就没有那个必要了,我们可以直接使用<header>标签
+使结构更加具有语义化
+
+Header 的内容一般是一组介绍性文字和导航链接。
+
+那我们要何时使用了:
+我们需要在页面起始的部分使用这个元素，我们可以在像主页标题这种位置开始。
+<header>
+    <h1>The most important heading on this page</h1>
+    <p>With some supplementary information</p>
+</header>
+一个页面可以有多个Header标签
+
+<header>
+    <h1>The most important heading on this page</h1>
+    <p>With some supplementary information</p>
+</header>
+
+<article>
+    <header>
+        <h2>Title of this article</h2>
+        <p>By Richard Clark</p>
+    </header>
+    <p>...Lorem Ipsum dolor set amet...</p>
+</article>
+
+元素渲染为一个块级元素，您将需要显式声明它作为一个块在CSS中
+header { display:block;}
+兼容ie<9
+
+总结:
+总之， <header> 给我们一些非常棒附加语义值，以描述文档或部分的头。
+
+
+
+
+
